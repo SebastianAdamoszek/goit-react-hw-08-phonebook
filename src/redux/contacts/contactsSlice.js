@@ -1,5 +1,7 @@
+
 import { createSlice } from '@reduxjs/toolkit';
 import { fetchContacts, addContact, deleteContact } from './operations';
+import { logOut } from '../auth/operations';
 
 const handlePending = state => {
   state.isLoading = true;
@@ -10,7 +12,7 @@ const handleRejected = (state, action) => {
   state.error = action.payload;
 };
 
-
+// The two functions beneath are for builder callback:
 const isPendingAction = action => {
   return action.type.endsWith('/pending');
 };
@@ -28,6 +30,9 @@ const contactsSlice = createSlice({
   },
   extraReducers: builder => {
     builder
+      .addCase(logOut.fulfilled, (state) => {
+        state.items = [];
+      })
       .addCase(fetchContacts.fulfilled, (state, action) => {
         state.isLoading = false;
         state.error = null;

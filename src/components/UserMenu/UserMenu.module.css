@@ -1,0 +1,14 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+}
+
+.username {
+  font-family: Coiny;
+  font-weight: 400;
+  color: blue;
+}

@@ -1,27 +1,32 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { setFilterStatus } from '../../redux/filterSlice';
+import { setFilter } from '../../redux/filter/filterSlice';
 import { nanoid } from 'nanoid';
+import css from './Filter.module.css';
+import Input from 'styled/Input';
+import LabelContainer from 'styled/LabelContainer';
 
 const Filter = () => {
   const dispatch = useDispatch();
   const filterId = nanoid();
 
-  const onFilterChange = event => {
-    dispatch(setFilterStatus(event.target.value.toLowerCase()));
+  const handleChange = event => {
+    dispatch(setFilter(event.currentTarget.value));
   };
 
   return (
-    <label htmlFor={filterId}>
-      Find contacts by name
-      <input
-        id={filterId}
-        name="filterName"
-        type="text"
-        placeholder="Search contacts..."
-        onChange={onFilterChange}
-      />
-    </label>
+    <div className={css.filter}>
+      <LabelContainer>
+        <label htmlFor={filterId}>Find contacts</label>
+        <Input
+          id={filterId}
+          type="search"
+          placeholder="Enter name"
+          onChange={event => handleChange(event)}
+        />
+      </LabelContainer>
+    </div>
   );
 };
+
 export default Filter;
