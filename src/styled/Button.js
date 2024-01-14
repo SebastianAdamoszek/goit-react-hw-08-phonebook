@@ -12,6 +12,7 @@ const Button = styled.button`
   transition-duration: 400ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+  margin-left: 20px;
 
   &:hover,
   &:focus {

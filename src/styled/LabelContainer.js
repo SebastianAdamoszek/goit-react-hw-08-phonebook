@@ -7,6 +7,7 @@ const LabelContainer = styled.div`
   color: blue;
   gap: 10px;
   margin-top: 10px;
+  padding-left: 20px;
 `;
 
 export default LabelContainer;
