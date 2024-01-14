@@ -12,7 +12,7 @@ const Form = styled.form`
   @media screen and (min-width: 520px) {
     & {
       align-items: flex-start;
-      
+      margin: 20px;
     }
   }
 `;
