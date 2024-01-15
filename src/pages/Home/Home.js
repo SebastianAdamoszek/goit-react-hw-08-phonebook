@@ -1,6 +1,6 @@
 import React from 'react';
 import css from './Home.module.css';
-import img from './background.png';
+import img from './book.png';
 
 export default function Home() {
   return (

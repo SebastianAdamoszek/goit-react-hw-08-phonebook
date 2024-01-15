@@ -1,8 +1,8 @@
 .spinner {
- display: flex;
- justify-content: center;
- align-items: center;
- margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
   z-index: 20;
   opacity: 0.2;
 }

@@ -1,6 +1,7 @@
 import { useLocation } from 'react-router-dom';
 import { useAuth } from 'hooks';
 import { Link, Nav } from './Navigation.styled';
+import icon from '../../pages/Home/book.png';
 
 export const Navigation = () => {
   const { isLoggedIn } = useAuth();
@@ -22,7 +23,10 @@ export const Navigation = () => {
           }
           to="/phonebook"
         >
-          Phonebook
+          <div style={{display: 'flex', gap: '5px'}}>
+            <span>Your contacts</span>
+            <img src={icon} alt="book" width={30} />
+          </div>
         </Link>
       )}
     </Nav>

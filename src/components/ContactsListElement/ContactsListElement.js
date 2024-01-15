@@ -30,7 +30,7 @@ const ContactsListElement = ({ contact }) => {
         <span
           style={{ color: getRandomHexColor(), textShadow: '1px 1px black' }}
         >
-          &#10047;
+          &#11047;
         </span>{' '}
         {contact.name}:
       </p>
