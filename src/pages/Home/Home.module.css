@@ -1,34 +1,37 @@
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-}
+
 .img {
   width: 600px;
   height: 600px;
   padding-bottom: 10px;
 }
-
-.title {
+.titleBox {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  font-family: 'Coiny', cursive;
-  font-weight: 500;
-  font-size: 36px;
-  font-style: italic;
-  padding: 10px 20px;
-  color: white;
+  gap: 10px;
+  padding: 10px;
+  background-color: #71ee82;
   border: 2px solid white;
   border-radius: 20px;
-  background-color: #71ee82;
-  text-shadow: 5px 5px rgb(64, 43, 226);
   box-shadow: 0 1px 1px rgba(138, 43, 226, 0.12),
     0 2px 2px rgba(138, 43, 226, 0.12), 0 4px 4px rgba(138, 43, 226, 0.12),
     0 8px 8px rgba(138, 43, 226, 0.12), 0 16px 16px rgba(138, 43, 226, 0.22),
     2px 2px rgba(138, 43, 226, 0.82) inset;
+}
+.title {
+  font-family: 'Coiny', cursive;
+  font-weight: 500;
+  font-size: 36px;
+  font-style: italic;
+  color: white;
+  text-shadow: 5px 5px rgb(64, 43, 226);
+}
+.autor {
+  font-size: 16px;
+  font-style: italic;
+  font-family: 'Coiny', cursive;
+  text-shadow: 5px 5px white;
+  color: rgb(51, 69, 232);
 }

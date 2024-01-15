@@ -4,12 +4,11 @@ import img from './book.png';
 
 export default function Home() {
   return (
-    <div className={css.container}>
-      <div className={css.title}>
-        <p>My</p>
-        <p>Phonebook</p>
-        <img src={img} alt="Background" className={css.img} />
-      </div>
+    <div className={css.titleBox}>
+      <span className={css.title}>My</span>
+      <span className={css.title}>Phonebook</span>
+      <img src={img} alt="Background" className={css.img} />
+      <span className={css.autor}>autor: Sebastian Adamoszek</span>
     </div>
   );
 }
