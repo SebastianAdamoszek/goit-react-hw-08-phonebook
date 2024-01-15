@@ -23,6 +23,5 @@ export const doubledContactNotification = name => {
 };
 
 export const addedContactNotification = name => {
-  Notify.warning(`${name} has been added to your Contacts.`, NOTIFY_PARAMS);
+  Notify.success(` Contact ${name} has been added.`, NOTIFY_PARAMS);
 };
-
