@@ -19,9 +19,9 @@ export const Navigation = () => {
       {isLoggedIn && (
         <Link
           isActive={
-            location.pathname.startsWith('/phonebook') ? 'active' : 'inactive'
+            location.pathname.startsWith('/contacts') ? 'active' : 'inactive'
           }
-          to="/phonebook"
+          to="/contacts"
         >
           <div style={{display: 'flex', gap: '5px'}}>
             <span>Your contacts</span>
