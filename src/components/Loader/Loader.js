@@ -5,9 +5,9 @@ import css from './Loader.module.css';
 const Loader = () => {
   return (
     <Circles
-      height="45vh"
-      width="45vw"
-      color="magenta"
+      height="450px"
+      width="450px"
+      color="blue"
       ariaLabel="circles-loading"
       wrapperClass={css.spinner}
       visible={true}

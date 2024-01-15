@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
 
 html {
-  background: #ce13db;
+  background: -webkit-linear-gradient(to right, #4e629c, #2f8eb0);
+  background: linear-gradient(to left, #1e0880, #3cb1b1, #3edb13);
 }
 
 body {
@@ -13,8 +14,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: -webkit-linear-gradient(to right, #4e629c, #2f8eb0);
-  background: linear-gradient(to top, #1e0880, #3cb1b1, #3edb13);
 }
 
 code {
