@@ -2,7 +2,9 @@ import axios from 'axios';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import { registrationFailureEmailInUseNotification } from 'utils/notifications';
 
-axios.defaults.baseURL = 'https://connections-api.herokuapp.com/';
+/*axios.defaults.baseURL = 'https://connections-api.herokuapp.com/';*/
+axios.defaults.baseURL = 'https://connections-api.goit.global/';
+
 
 // Utility to add JWT
 const setAuthHeader = token => {
